@@ -4,7 +4,7 @@ export function initialFX() {
   document.body.style.overflowY = "auto";
   document.getElementsByTagName("main")[0].classList.add("main-active");
   gsap.to("body", {
-    backgroundColor: "#0a0e17",
+    backgroundColor: "var(--backgroundColor)",
     duration: 0.5,
     delay: 1,
   });
