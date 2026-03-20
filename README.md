@@ -5,7 +5,9 @@ Do check it out!
 
 ## Instructions 🛠️
 
-I have modified the gsap club plugins with the trial plugins, but with the trial plugin you cannot host it🔴. So for Club plugins, Check out here: https://gsap.com/docs/v3/Installation/
+This version uses only free GSAP features, so it is safe to host publicly.
+No paid components, paid GSAP Club plugins, or trial-only plugins are used in this repository.
+You can deploy and host this project online for free without paying for plugin licenses.
 
 **Techstack** - React, TypeScript, GSAP, ThreeJS, WebGL, HTML, Css, JavaScript
 

@@ -1,43 +1,40 @@
 import { useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import HoverLinks from "./HoverLinks";
-import { gsap } from "gsap";
-import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
 import "./styles/Navbar.css";
-
-gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
-export let smoother: ScrollSmoother;
 
 const Navbar = () => {
   useEffect(() => {
-    smoother = ScrollSmoother.create({
-      wrapper: "#smooth-wrapper",
-      content: "#smooth-content",
-      smooth: 1.7,
-      speed: 1.7,
-      effects: true,
-      autoResize: true,
-      ignoreMobileResize: true,
-    });
+    const links = document.querySelectorAll<HTMLAnchorElement>(".header ul a");
+    const clickHandlers = new Map<HTMLAnchorElement, (e: Event) => void>();
 
-    smoother.scrollTop(0);
-    smoother.paused(true);
+    links.forEach((element) => {
+      const clickHandler = (e: Event) => {
+        if (window.innerWidth <= 1024) return;
 
-    let links = document.querySelectorAll(".header ul a");
-    links.forEach((elem) => {
-      let element = elem as HTMLAnchorElement;
-      element.addEventListener("click", (e) => {
-        if (window.innerWidth > 1024) {
-          e.preventDefault();
-          let elem = e.currentTarget as HTMLAnchorElement;
-          let section = elem.getAttribute("data-href");
-          smoother.scrollTo(section, true, "top top");
+        e.preventDefault();
+        const section = element.getAttribute("data-href");
+        if (!section) return;
+
+        const target = document.querySelector(section);
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
         }
+      };
+
+      clickHandlers.set(element, clickHandler);
+      element.addEventListener("click", clickHandler);
+    });
+
+    const resizeHandler = () => ScrollTrigger.refresh();
+    window.addEventListener("resize", resizeHandler);
+
+    return () => {
+      clickHandlers.forEach((handler, element) => {
+        element.removeEventListener("click", handler);
       });
-    });
-    window.addEventListener("resize", () => {
-      ScrollSmoother.refresh(true);
-    });
+      window.removeEventListener("resize", resizeHandler);
+    };
   }, []);
   return (
     <>
