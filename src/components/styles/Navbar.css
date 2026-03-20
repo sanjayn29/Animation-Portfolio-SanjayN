@@ -11,6 +11,7 @@
   transform: translateX(-50%);
   top: 0;
   z-index: 9999;
+  color: var(--text);
 }
 .header ul {
   font-size: 12px;
@@ -26,7 +27,7 @@
 .header ul li {
   margin-left: 0px;
   letter-spacing: 1px;
-  color: #ccc;
+  color: var(--secondary-text);
   font-weight: 600;
   cursor: pointer;
 }
@@ -39,11 +40,13 @@
   font-size: 15px;
   letter-spacing: 1px;
   font-weight: 500;
+  color: var(--secondary-text);
 }
 .navbar-title {
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.2px;
+  color: var(--primary);
 }
 @media only screen and (min-width: 500px) {
   .header {
@@ -55,7 +58,7 @@
     font-size: 14px;
   }
   .header ul li {
-    color: #eae5ec;
+    color: var(--text);
   }
   .navbar-title {
     font-size: 16px;
