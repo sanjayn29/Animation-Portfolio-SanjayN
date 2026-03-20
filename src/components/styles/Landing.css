@@ -4,6 +4,8 @@
   margin: auto;
   position: relative;
   height: var(--vh);
+  background-color: var(--background);
+  color: var(--text);
 }
 
 .landing-container {
@@ -21,8 +23,8 @@
   position: fixed;
   width: 300px;
   height: 300px;
-  background-color: #22d3ee;
-  box-shadow: inset -50px 40px 50px rgba(0, 180, 180, 0.6);
+  background-color: var(--primary);
+  box-shadow: inset -50px 40px 50px rgba(250, 204, 21, 0.45);
   filter: blur(60px);
   border-radius: 50%;
   animation: loadingCircle 5s linear infinite;
@@ -61,8 +63,8 @@
   display: none;
   width: 300px;
   height: 300px;
-  background-color: #22d3ee;
-  box-shadow: inset -50px 40px 50px rgba(0, 180, 180, 0.6);
+  background-color: var(--primary);
+  box-shadow: inset -50px 40px 50px rgba(250, 204, 21, 0.45);
   filter: blur(50px);
   border-radius: 50%;
   animation: loadingCircle2 5s linear infinite;
@@ -94,9 +96,9 @@
   width: 400px;
   height: 400px;
   z-index: 1;
-  background-color: #22d3ee;
+  background-color: var(--primary);
   transform: translate(-50%, 36%) scaleX(1.4);
-  box-shadow: inset 66px 35px 85px 0px rgba(0, 180, 180, 0.65);
+  box-shadow: inset 66px 35px 85px 0px rgba(250, 204, 21, 0.5);
   filter: blur(50px);
   border-radius: 50%;
   top: 50%;
@@ -177,7 +179,7 @@
 
 .landing-intro h2 {
   margin: 0;
-  color: var(--accentColor);
+  color: var(--primary);
   font-size: 22px;
   font-weight: 300;
   letter-spacing: 2px;
@@ -185,6 +187,7 @@
 
 .landing-intro h1 {
   margin: 0;
+  color: var(--text);
   letter-spacing: 2px;
   font-size: 28px;
   line-height: 28px;
@@ -209,7 +212,7 @@
   font-size: 22px;
   letter-spacing: 2px;
   font-weight: 300;
-  color: var(--accentColor);
+  color: var(--primary);
   margin: 0;
 }
 
@@ -218,6 +221,7 @@
   margin-top: -20px;
   margin-left: 20px;
   font-family: "Geist", sans-serif;
+  color: var(--secondary-text);
   font-weight: 600;
   font-size: 32px;
   line-height: 40px;
@@ -234,7 +238,7 @@
 }
 
 h2.landing-info-h2 {
-  color: #14b8a6;
+  color: var(--primary);
   font-size: 42px;
   width: 120%;
   margin: 0;
