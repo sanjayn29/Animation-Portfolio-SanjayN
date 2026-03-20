@@ -16,13 +16,14 @@
   gap: 8px;
   z-index: 999;
   padding: 10px;
+  color: var(--secondary-text);
 }
 .social-icons:hover {
   transition: 0.3s;
-  color: var(--backgroundColor);
+  color: var(--primary);
 }
 .social-icons a:hover {
-  color: var(--backgroundColor);
+  color: var(--primary);
   /* transform: scale(1.2); */
 }
 .social-icons span {
@@ -39,6 +40,7 @@
   top: var(--siTop, 50%);
   transform: translate(-50%, -50%);
   display: flex;
+  color: var(--text);
   font-size: 23px;
   will-change: left, top;
   transition: transform 0.3s ease-out;
@@ -56,17 +58,17 @@
   font-size: 15px;
   line-height: 15px;
   font-weight: 600;
-  color: #5e5e5e;
+  color: var(--secondary-text);
   cursor: pointer;
   transition: 0.5s;
   transform-origin: left bottom;
   transform: translateX(100%) rotateZ(-90deg);
 }
 .resume-button:hover {
-  color: #fff;
+  color: var(--text);
 }
-div.resume-button span {
-  color: #fff;
+.resume-button span {
+  color: var(--primary);
   font-size: 17px;
   margin-top: -1px;
   display: flex;
@@ -77,7 +79,7 @@ div.resume-button span {
   top: 655px;
   left: 0;
   height: 1px;
-  background-color: #ffffff;
+  background-color: var(--text);
   width: 100%;
   z-index: 99999;
 }
@@ -96,7 +98,7 @@ div.resume-button span {
     font-size: 20px;
     line-height: 20px;
   }
-  div.resume-button span {
+  .resume-button span {
     font-size: 23px;
     margin-top: -1.5px;
   }
