@@ -10,6 +10,8 @@
   margin: auto;
   margin-bottom: 250px;
   padding: 120px 0px;
+  background-color: var(--background);
+  color: var(--text);
 }
 
 .career-section h2 {
@@ -17,7 +19,7 @@
   line-height: 70px;
   font-weight: 400;
   text-align: center;
-  background: linear-gradient(0deg, #0d9488, #ffffff);
+  background: linear-gradient(0deg, var(--primary), var(--text));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -49,6 +51,7 @@
   font-size: 18px;
   font-weight: 300;
   margin: 0;
+  color: var(--secondary-text);
 }
 
 .career-info-in {
@@ -79,7 +82,7 @@
   font-size: 20px;
   text-transform: capitalize;
   margin: 10px 0px;
-  color: var(--accentColor);
+  color: var(--primary);
 }
 
 .career-timeline {
@@ -90,8 +93,8 @@
   width: 3px;
   height: 100%;
   background-image: linear-gradient(to top,
-      #14b8a6 20%,
-      var(--accentColor) 50%,
+      var(--primary) 20%,
+      var(--primary) 50%,
       transparent 95%);
   max-height: 0%;
 }
@@ -101,12 +104,12 @@
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 50%);
-  background-color: #14b8a6;
+  background-color: var(--primary);
   width: 10px;
   height: 10px;
   border-radius: 50px;
-  box-shadow: 0px 0px 5px 2px #67e8f9, 0px 0px 15px 8px #5eead4,
-    0px 0px 110px 20px #a5f3fc;
+  box-shadow: 0px 0px 5px 2px #fef08a, 0px 0px 15px 8px #facc15,
+    0px 0px 110px 20px #fde047;
   animation: timeline 0.8s linear infinite forwards;
 }
 
@@ -117,7 +120,7 @@
   50%,
   70%,
   90% {
-    box-shadow: 0px 0px 5px 2px #67e8f9;
+    box-shadow: 0px 0px 5px 2px #fef08a;
   }
 
   10%,
@@ -126,19 +129,19 @@
   100%,
   64%,
   80% {
-    box-shadow: 0px 0px 5px 2px #67e8f9, 0px 0px 15px 5px #5eead4,
-      0px 0px 110px 20px #a5f3fc;
+    box-shadow: 0px 0px 5px 2px #fef08a, 0px 0px 15px 5px #facc15,
+      0px 0px 110px 20px #fde047;
   }
 }
 
 @keyframes timeline2 {
   0% {
-    box-shadow: 0px 0px 5px 2px #67e8f9;
+    box-shadow: 0px 0px 5px 2px #fef08a;
   }
 
   100% {
-    box-shadow: 0px 0px 5px 2px #67e8f9, 0px 0px 15px 5px #5eead4,
-      0px 0px 110px 20px #a5f3fc;
+    box-shadow: 0px 0px 5px 2px #fef08a, 0px 0px 15px 5px #facc15,
+      0px 0px 110px 20px #fde047;
   }
 }
 
