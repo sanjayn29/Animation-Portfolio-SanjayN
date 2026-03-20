@@ -88,6 +88,14 @@ body {
   width: 100%;
   margin: auto;
   position: relative;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+#smooth-wrapper,
+#smooth-content {
+  background-color: var(--background);
+  color: var(--text);
 }
 
 .container1 {
