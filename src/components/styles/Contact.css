@@ -4,7 +4,8 @@
   margin-top: 100px;
   position: relative;
   z-index: 2;
-  background-color: var(--backgroundColor);
+  background-color: var(--background);
+  color: var(--text);
 }
 
 .contact-section h3 {
@@ -12,6 +13,7 @@
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
+  color: var(--primary);
 }
 
 .contact-flex {
@@ -22,7 +24,8 @@
 .contact-flex h4 {
   font-weight: 500;
   margin: 0;
-  opacity: 0.6;
+  color: var(--secondary-text);
+  opacity: 1;
 }
 
 .contact-box {
@@ -33,21 +36,24 @@
 .contact-flex p {
   margin-top: 10px;
   margin-bottom: 20px;
+  color: var(--secondary-text);
 }
 
 a.contact-social {
   font-size: 25px;
-  border-bottom: 1px solid #ccc;
+  color: var(--text);
+  border-bottom: 1px solid var(--secondary-text);
 }
 
 .contact-box h2 {
   font-weight: 400;
   font-size: 23px;
   margin: 0;
+  color: var(--text);
 }
 
 .contact-box h2>span {
-  color: var(--accentColor);
+  color: var(--primary);
 }
 
 .contact-box h5 {
@@ -56,7 +62,8 @@ a.contact-social {
   line-height: 20px;
   display: flex;
   gap: 10px;
-  opacity: 0.5;
+  color: var(--secondary-text);
+  opacity: 1;
 }
 
 @media only screen and (max-width: 1600px) {
