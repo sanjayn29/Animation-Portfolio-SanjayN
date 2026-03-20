@@ -43,7 +43,7 @@ const WhatIDo = () => {
                 y1="0"
                 x2="0"
                 y2="100%"
-                stroke="white"
+                stroke="var(--secondary-text)"
                 strokeWidth="2"
                 strokeDasharray="7,7"
               />
@@ -52,7 +52,7 @@ const WhatIDo = () => {
                 y1="0"
                 x2="100%"
                 y2="100%"
-                stroke="white"
+                stroke="var(--secondary-text)"
                 strokeWidth="2"
                 strokeDasharray="7,7"
               />
@@ -69,7 +69,7 @@ const WhatIDo = () => {
                   y1="0"
                   x2="100%"
                   y2="0"
-                  stroke="white"
+                  stroke="var(--secondary-text)"
                   strokeWidth="2"
                   strokeDasharray="6,6"
                 />
@@ -78,7 +78,7 @@ const WhatIDo = () => {
                   y1="100%"
                   x2="100%"
                   y2="100%"
-                  stroke="white"
+                  stroke="var(--secondary-text)"
                   strokeWidth="2"
                   strokeDasharray="6,6"
                 />
@@ -118,7 +118,7 @@ const WhatIDo = () => {
                   y1="100%"
                   x2="100%"
                   y2="100%"
-                  stroke="white"
+                  stroke="var(--secondary-text)"
                   strokeWidth="2"
                   strokeDasharray="6,6"
                 />
