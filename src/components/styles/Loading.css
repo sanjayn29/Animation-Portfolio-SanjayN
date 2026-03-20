@@ -3,7 +3,7 @@
   width: 100vw;
   height: var(--vh);
   /* background-image: linear-gradient(#cbb1ff, #d8c4ff); */
-  background-color: #e0f2f1;
+  background-color: var(--background);
   z-index: 999999999;
   display: flex;
   place-items: center;
@@ -13,7 +13,8 @@
 .loading-button {
   padding: 20px 50px;
   border-radius: 100px;
-  background-color: #000;
+  background-color: var(--text);
+  color: var(--background);
   overflow: hidden;
   font-size: 18px;
   font-weight: 500;
@@ -23,7 +24,7 @@
 
 .loading-button::before {
   content: "";
-  background-color: #ffffff;
+  background-color: var(--primary);
   top: var(--mouse-y);
   left: var(--mouse-x);
   border-radius: 50%;
@@ -52,7 +53,7 @@
   min-width: 0px;
   min-height: 0px;
   border-radius: 100px;
-  background-color: #000;
+  background-color: var(--primary);
   overflow: hidden;
   transition: 0.8s ease-in-out;
   transition-delay: 0.2s;
@@ -77,7 +78,7 @@
 }
 
 .loading-hover {
-  background-color: #2dd4bf;
+  background-color: var(--primary);
   width: 250px;
   height: 120px;
   position: absolute;
@@ -101,7 +102,8 @@
 
 .loading-content {
   position: relative;
-  background-color: #000;
+  background-color: var(--text);
+  color: var(--background);
   width: 100%;
   overflow: hidden;
   transition: 0.6s;
@@ -125,6 +127,7 @@
   align-items: center;
   column-gap: 10px;
   text-align: center;
+  color: var(--background);
   transition: 1s;
   max-width: var(--Lsize);
 }
@@ -150,7 +153,7 @@
   transform: translate(100%, -50%);
   width: 15px;
   height: 25px;
-  background-color: white;
+  background-color: var(--primary);
   animation: blink 1s linear infinite;
 }
 
@@ -210,7 +213,7 @@
   left: 50%;
   transform: translateX(-50%);
   top: 0;
-  color: var(--backgroundColor);
+  color: var(--text);
 }
 
 .loader-title {
@@ -288,7 +291,7 @@
   position: relative;
   width: 10px;
   height: 60px;
-  background-color: #000;
+  background-color: var(--secondary-text);
   display: block;
 }
 
@@ -304,7 +307,7 @@
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: #2dd4bf;
+  background-color: var(--primary);
   animation: ball25 7s infinite;
   transform: translateY(10px);
   animation-timing-function: cubic-bezier(0.3, 1.18, 0.63, 1.28);
@@ -316,7 +319,7 @@
   left: 0;
   width: 100%;
   transform: translateY(-50%);
-  color: var(--backgroundColor);
+  color: var(--secondary-text);
   font-size: 60px;
   font-weight: 600;
   text-transform: uppercase;
@@ -331,7 +334,7 @@
   content: "";
   width: 20px;
   height: 20px;
-  background-color: var(--backgroundColor);
+  background-color: var(--primary);
   position: absolute;
   top: 50%;
   border-radius: 50px;
