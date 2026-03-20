@@ -3,9 +3,11 @@
   display: flex;
   text-wrap: nowrap;
   overflow: hidden;
+  color: var(--text);
 }
 .hover-in {
   position: relative;
+  color: var(--secondary-text);
   transition: 0.3s;
 }
 .hover-in div {
@@ -16,5 +18,5 @@
 }
 .hover-link:hover .hover-in {
   transform: translateY(-100%);
-  color: var(--accentColor);
+  color: var(--primary);
 }
