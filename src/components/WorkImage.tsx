@@ -11,6 +11,21 @@ interface Props {
 const WorkImage = (props: Props) => {
   const [isVideo, setIsVideo] = useState(false);
   const [video, setVideo] = useState("");
+
+  const linkStyle = {
+    backgroundColor: "var(--background)",
+    color: "var(--text)",
+  };
+
+  const imageStyle = {
+    border: "1px solid rgba(209, 213, 219, 0.35)",
+    backgroundColor: "var(--background)",
+  };
+
+  const videoStyle = {
+    backgroundColor: "var(--background)",
+  };
+
   const handleMouseEnter = async () => {
     if (props.video) {
       setIsVideo(true);
@@ -30,14 +45,17 @@ const WorkImage = (props: Props) => {
         onMouseLeave={() => setIsVideo(false)}
         target="_blank"
         data-cursor={"disable"}
+        style={linkStyle}
       >
         {props.link && (
           <div className="work-link">
             <MdArrowOutward />
           </div>
         )}
-        <img src={props.image} alt={props.alt} />
-        {isVideo && <video src={video} autoPlay muted playsInline loop></video>}
+        <img src={props.image} alt={props.alt} style={imageStyle} />
+        {isVideo && (
+          <video src={video} autoPlay muted playsInline loop style={videoStyle}></video>
+        )}
       </a>
     </div>
   );
